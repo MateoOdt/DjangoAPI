@@ -18,7 +18,6 @@ class GameViewSet(viewsets.ModelViewSet):
 
     self.perform_create(serializer)
     return Response(serializer.data, status=status.HTTP_201_CREATED)
-  
 
   def retrieve(self, request, *args, **kwargs):
     post_id = kwargs.get('pk')
