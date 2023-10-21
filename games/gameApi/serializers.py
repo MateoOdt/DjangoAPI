@@ -4,5 +4,5 @@ from games.gameApi.models import GameModel
 class GameSerializer(serializers.HyperlinkedModelSerializer):
   class Meta: 
     model = GameModel
-    fields = ('title', 'desc', 'addedDate', 'categorie', 'plateform')
+    fields = '__all__'
 
