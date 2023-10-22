@@ -1,8 +1,6 @@
 # Django API - Games Library
 
-Ce repository GIT consiste en la création d'une API dans le cadre du cours de Mr. SEMLALI de développement web BACKEND.
-
-Ce projet est une API de gestion de jeux vidéo, ainsi l'utilisateurs à accès à une bibliotheque pour y stocker ces jeux.
+Ce repository GIT consiste en la création d'une API dans le cadre du cours de M. SEMLALI de développement web BACKEND. Dans le cadre de ce projet, j'ai développé une API de gestion de jeux vidéo qui offre aux utilisateurs la possibilité de gérer leur collection de jeux de manière efficace.
 
 ## Technologies Utilisées
 
