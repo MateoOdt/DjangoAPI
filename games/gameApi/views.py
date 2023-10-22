@@ -6,10 +6,12 @@ from rest_framework import status
 from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from rest_framework import filters
 # Create your views here.
 
 class GameViewSet(viewsets.ModelViewSet):
+  search_fields = ['title']
+  filter_backends = (filters.SearchFilter,)
   queryset = GameModel.objects.all()
 
   ##Traduction en JSON
