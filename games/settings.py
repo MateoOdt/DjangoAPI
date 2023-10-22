@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'games.gameApi',
     'games.categorie',
     'rest_framework_simplejwt',
+    'rest_framework_swagger',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
