@@ -4,6 +4,7 @@ from games.gameApi.serializers import GameSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.generics import get_object_or_404
+from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 class GameViewSet(viewsets.ModelViewSet):
@@ -11,6 +12,7 @@ class GameViewSet(viewsets.ModelViewSet):
 
   ##Traduction en JSON
   serializer_class = GameSerializer
+  permission_classes = [IsAuthenticated]
 
   def create(self, request, *args, **kwargs):
     serializer = self.get_serializer(data=request.data)
