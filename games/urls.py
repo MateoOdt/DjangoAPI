@@ -4,6 +4,7 @@ from django.urls import path
 from rest_framework import routers
 from games.gameApi.views import GameViewSet
 from games.categorie.views import CategoryViewSet
+from games.users.views import UserViewSet
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -11,6 +12,7 @@ from rest_framework_simplejwt.views import (
 )
 
 router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
 router.register(r'games', GameViewSet)
 router.register(r'categorie', CategoryViewSet)
 
